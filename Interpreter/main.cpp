@@ -755,6 +755,9 @@ int main() {
 //        tokenlist = Tokenize(tokenizefile + std::to_string(i) + ".c");
 //        continue;
 //    }
+
+//file 5: incrorrectly identifies error as line 6, token PLUS (should be missing closing quote on next line)
+//all others work as intended
     int i=1;
     ignoreComments(fileName + std::to_string(i) + ".c", tokenizefile + std::to_string(i) + ".c");
     tokenlist = Tokenize(tokenizefile + std::to_string(i) + ".c");
