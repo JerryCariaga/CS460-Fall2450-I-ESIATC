@@ -206,7 +206,7 @@ public:
             {
                cout<<"Have not build the parseFor fuction yet"<<endl;
                exit(0);
-              //parseForStatement();
+               //parseForStatement();
             }
 
             //procedure declaration
@@ -758,7 +758,7 @@ int main() {
 
 //file 5: incrorrectly identifies error as line 6, token PLUS (should be missing closing quote on next line)
 //all others work as intended
-    int i=1;
+    int i=4;
     ignoreComments(fileName + std::to_string(i) + ".c", tokenizefile + std::to_string(i) + ".c");
     tokenlist = Tokenize(tokenizefile + std::to_string(i) + ".c");
     Parser CST(tokenlist);
